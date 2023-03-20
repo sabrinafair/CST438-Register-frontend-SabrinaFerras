@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import Radio from '@mui/material/Radio';
 import {DataGrid} from '@mui/x-data-grid';
 import {SEMESTER_LIST} from '../constants.js'
+import AddStudent from './AddStudent';
 
 // user selects from a list of  (year, semester) values
 class Semester extends Component {
@@ -44,6 +45,9 @@ class Semester extends Component {
        
     return (
        <div>
+		 <div>
+			<AddStudent/>
+		 </div>
          <AppBar position="static" color="default">
             <Toolbar>
                <Typography variant="h6" color="inherit">
